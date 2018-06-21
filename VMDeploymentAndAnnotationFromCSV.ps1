@@ -27,7 +27,10 @@ foreach ($item in $vmlist) {
     $subnet = $item.subnet
     $gateway = $item.gateway
     $vlan = $item.vlan
- 
+    $Annot_AppName = $item.AppName
+    $Annot_RFCNumber = $item.RFCNumber
+    $Annot_ProvisionedBy = $item.ProvisionedBy
+
     #Get the Specification and set the Nic Mapping and computername
     Get-OSCustomizationSpec $custspec | Get-OSCustomizationNicMapping | Set-OSCustomizationNicMapping -IpMode UseStaticIp -IpAddress $ipaddr -SubnetMask $subnet -DefaultGateway $gateway -Dns $pdns,$sdns
     
@@ -42,6 +45,7 @@ foreach ($item in $vmlist) {
     Get-VM -Name $vmname | Set-VM -NumCpu $NumCpu -MemoryMB $MemoryMB -Confirm:$false
 
     # Set VM annotations
-    Get-VM -Name $vmname | Set-
-    
+    Get-VM -Name $vmname | Set-Annotation -CustomAttribute "Name" -Value $Annot_AppName -Confirm:$false
+    Get-VM -Name $vmname | Set-Annotation -CustomAttribute "RFC Number" -Value $Annot_RFCNumber -Confirm:$false
+    Get-VM -Name $vmname | Set-Annotation -CustomAttribute "Provisioned By" -Value $Annot_ProvisionedBy -Confirm:$false
 }
