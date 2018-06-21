@@ -1,9 +1,9 @@
-﻿# Connect to GovDC vCenter servers
+﻿# Connect to xxx vCenter servers
 
 # Create an array of vCenter servers
 $hosts = @( 
-    "virtvsp-mas006.nswhealth.net", 
-    "virtvsp-mas007.nswhealth.net"
+    "xxx.net", 
+    "xxx.net"
 );
 
 
@@ -19,5 +19,5 @@ Connect-VIServer -Menu
 $global:DefaultVIServers
 
 #Connect to all vCenters in linked mode
-Connect-VIServer "virtvsp-mas006.nswhealth.net" -AllLinked:$true
+Connect-VIServer "xxx.net" -AllLinked:$true
 
