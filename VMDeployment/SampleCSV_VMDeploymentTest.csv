@@ -1,3 +1,3 @@
 template,datastore,vmhost,custspec,vmname,dnsname,NumCpu,MemoryMB,ipaddress,subnet,gateway,pdns,sdns,vlan,AppName,RFCNumber,ProvisionedBy
-Template_Win_2016_2.5.1_WCry,SVDHIaaSLAB_FAS907_DEV_SAS_Data003,svdcvsp-svh921.nswhealth.net,NSWHEALTH_vra,khanhtest1.NSWHEALTH.NET,khanhtest1,2,4096,172.16.10.10,255.255.255.0,172.16.10.1,10.144.20.131,10.140.20.131,3197_HIaaS_vRA,App Tier,C:blah123,Khanh Pham
-Template_Win_2016_2.5.1_WCry,SVDHIaaSLAB_FAS907_DEV_SAS_Data004,svdcvsp-svh922.nswhealth.net,NSWHEALTH_vra,khanhtest2.NSWHEALTH.NET,khanhtest2,2,4096,172.16.10.11,255.255.255.0,172.16.10.1,10.144.20.131,10.140.20.131,3197_HIaaS_vRA,DB Tier,C:blah123,Khanh Pham
+Template_Win_2016_2.5.1_WCry,SVDHIaaSLAB_FAS907_DEV_SAS_Data003,svdcvsp-svh921.xxx.net,NSWHEALTH_vra,khanhtest1.NSWHEALTH.NET,khanhtest1,2,4096,172.16.10.10,255.255.255.0,172.16.10.1,10.144.20.131,10.140.20.131,3197_HIaaS_vRA,App Tier,C:blah123,Khanh Pham
+ 
