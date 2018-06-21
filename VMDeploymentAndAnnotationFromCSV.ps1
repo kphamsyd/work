@@ -7,7 +7,7 @@
 ###########################################################
 
 
-Connect-VIServer virtvsp-mas903
+Connect-VIServer xxx
  
 $vmlist = Import-CSV "C:\Github\Khanh\VMDeployment\SampleCSV_VMDeploymentTest.csv"
  
